@@ -5,9 +5,9 @@ var naptime = lunchtime + 2;
 var partytime;
 var evening = 18;
 
-// Getting it to show the current time on the page
+//getting it to show the current time on the page
 var showCurrentTime = function() {
-  // display the string on the webpage
+  //display the string on the webpage
   var clock = document.getElementById("clock");
 
   var currentTime = new Date();
@@ -17,7 +17,7 @@ var showCurrentTime = function() {
   var seconds = currentTime.getSeconds();
   var meridian = "AM";
 
-  // Set hours
+  //set hours
   if (hours >= noon) {
     meridian = "PM";
   }
@@ -26,23 +26,24 @@ var showCurrentTime = function() {
     hours = hours - 12;
   }
 
-  // Set Minutes
+  //set minutes
   if (minutes < 10) {
     minutes = "0" + minutes;
   }
 
-  // Set Seconds
+  //set seconds
   if (seconds < 10) {
-    seconds = "0" + seconds;
+    econds = 0 + seconds;
   }
 
-  // put together the string that displays the time
+  //this string will put it all together and display the time
   var clockTime = hours + ":" + minutes + ":" + seconds + " " + meridian + "!";
 
   clock.innerText = clockTime;
 };
 
-// Getting the clock to increment on its own and change out messages and pictures
+// getting the clock to increment on its own and change out messages and pictures
+
 var updateClock = function() {
   var time = new Date().getHours();
   var messageText;
@@ -80,20 +81,19 @@ var updateClock = function() {
       "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/normalTime.jpg";
     messageText = "Good afternoon!";
   }
-
   console.log(messageText);
   timeEventJS.innerText = messageText;
-  lolcatImage.src = image;
+  lolcatImageJS.src = image;
 
   showCurrentTime();
 };
 updateClock();
 
-// Getting the clock to increment once a second
+//getting the clock to increment once a second
 var oneSecond = 1000;
 setInterval(updateClock, oneSecond);
 
-// Getting the Party Time Button To Work
+//getting the party time button to work
 var partyButton = document.getElementById("partyTimeButton");
 
 var partyEvent = function() {
@@ -111,7 +111,7 @@ var partyEvent = function() {
 partyButton.addEventListener("click", partyEvent);
 partyEvent();
 
-// Activates Wake-Up selector
+//activates Wake-Up selector
 var wakeUpTimeSelector = document.getElementById("wakeUpTimeSelector");
 
 var wakeUpEvent = function() {
@@ -120,7 +120,7 @@ var wakeUpEvent = function() {
 
 wakeUpTimeSelector.addEventListener("change", wakeUpEvent);
 
-// Activates Lunch selector
+//activates lunch selector
 var lunchTimeSelector = document.getElementById("lunchTimeSelector");
 
 var lunchEvent = function() {
@@ -129,7 +129,7 @@ var lunchEvent = function() {
 
 lunchTimeSelector.addEventListener("change", lunchEvent);
 
-// Activates Nap-Time selector
+//activates nap-time selector
 var napTimeSelector = document.getElementById("napTimeSelector");
 
 var napEvent = function() {
