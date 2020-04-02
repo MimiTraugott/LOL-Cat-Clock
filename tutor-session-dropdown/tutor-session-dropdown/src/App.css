@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.side-menu{
+  width: 300px;
+  margin-left: 0;
+}
+
+.metismenu {
+  background-color: #001871;
+  border: none;
+  color:white;
+  height: 100vh;
+}
+
+.metismenu-link {
+  color:white;
+}
+
+.metismenu-link.has-active-child{
+  color:white;
+}
+
+.metismenu-link active{
+  background:#001871;
+}
+ .metismenu a {
+   color:white;
+ }
+
+a.metismenu-link.active {
+  background: #939597;
+}
+
+.remaining-content{
+  border-style: orange solid
+}
