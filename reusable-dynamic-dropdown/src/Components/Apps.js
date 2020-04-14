@@ -3,37 +3,25 @@ import Sidebar from "./Sidebar";
 // import SidebarItem from './SidebarItem'
 
 const items = [
-  { name: "home", label: "Home" },
+  { name: "epitel", label: "Epitel" },
   {
-    name: "billing",
-    label: "Billing",
+    name: "devicesbydate",
+    label: "Devices By Date",
     items: [
-      { name: "statements", label: "Statements" },
-      { name: "reports", label: "Reports" },
+      { name: "today", label: "Today" },
+      { name: "last3days", label: "Last 3 Days" },
+      { name: "last7days", label: "Last 7 Days" },
+      { name: "last14days", label: "Last 14 Days" },
+      { name: "last30days", label: "Last 30 Days" },
     ],
   },
   {
-    name: "settings",
-    label: "Settings",
+    name: "devicesbyclinic",
+    label: "Devices By Clinic",
     items: [
-        { name: "profile", label: "Profile" },
-        { name: 'insurance', label: "Insurance"},
-        {
-            name: "notifications",
-            label: "Notifications",
-            items: [
-                { name: "email", label: "Email"},
-                {
-                    name: 'desktop',
-                    label: "Desktop",
-                    items: [
-                        {name: 'schedule', label: 'Schedule'},
-                        {name: 'frequency', label: 'Frequency'},
-                    ],
-                },
-                {name: 'sms', label: "SMS"}
-            ],
-        },
+      { name: "uofu", label: "UofU" },
+      { name: "johnshopkins", label: "Johns Hopkins" },
+      { name: "mountsinai", label: "Mount Sinai" },
     ],
   },
 ];
