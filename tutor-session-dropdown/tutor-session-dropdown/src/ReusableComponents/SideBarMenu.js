@@ -6,8 +6,10 @@ import MetisMenu from 'react-metismenu';
 
 function SideBarMenu({content}) {
   return (
+    <div>
     <div className="side-menu">
       <MetisMenu content={content} />
+    </div>
     </div>
   );
 }

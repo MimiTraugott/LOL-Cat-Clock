@@ -1,133 +1,100 @@
+import React, { Component } from "react";
+import "./App.css";
+import SideBarMenu from "./ReusableComponents/SideBarMenu";
 
-import React, {Component} from 'react';
-import './App.css';
-import SideBarMenu from './ReusableComponents/SideBarMenu';
-
-export const menuContent =
-[
+export const menuContent = [
   {
-      icon: 'icon-class-name',
-      label: 'IHC',
-      content: [
-          {
-              icon: 'icon-class-name',
-              label: 'Today',
-              to: '#another-link',
-          },
-          {
-              icon: 'icon-class-name',
-              label: 'Last 3 days',
-              to: '#another-link',
-          },
-      ],
-  },
-  {
-      icon: 'icon-class-name',
-      label: 'LDS',
-      content: [
-          {
-              icon: 'icon-class-name',
-              label: 'Today',
-              to: '#another-link',
-          },
-          {
-              icon: 'icon-class-name',
-              label: 'Last 3 days',
-              to: '#another-link',
-          },
-      ],
-  },
-  {
-    icon: 'icon-class-name',
-    label: 'Mayo Clinic',
+    icon: "icon-class-name",
+    label: "Device Activity by Date",
     content: [
-        {
-            icon: 'icon-class-name',
-            label: 'Today',
-            to: '#another-link',
-        },
-        {
-            icon: 'icon-class-name',
-            label: 'Last 3 days',
-            to: '#another-link',
-        },
-    ],
-},
-{
-  icon: 'icon-class-name',
-  label: 'Chicago Regional',
-  content: [
       {
-          icon: 'icon-class-name',
-          label: 'Today',
-          to: '#another-link',
+        icon: "icon-class-name",
+        label: "Today",
+        to: "#another-link"
       },
       {
-          icon: 'icon-class-name',
-          label: 'Last 3 days',
-          to: '#another-link',
-      },
-  ],
-},
-{
-  icon: 'icon-class-name',
-  label: 'St Judes',
-  content: [
-      {
-          icon: 'icon-class-name',
-          label: 'Today',
-          to: '#another-link',
+        icon: "icon-class-name",
+        label: "Last 3 days",
+        to: "#another-link"
       },
       {
-          icon: 'icon-class-name',
-          label: 'Last 3 days',
-          to: '#another-link',
-      },
-  ],
-},
-{
-  icon: 'icon-class-name',
-  label: 'Mount Sinai',
-  content: [
-      {
-          icon: 'icon-class-name',
-          label: 'Today',
-          to: '#another-link',
+        icon: "icon-class-name",
+        label: "Last 7 days",
+        to: "#another-link"
       },
       {
-          icon: 'icon-class-name',
-          label: 'Last 3 days',
-          to: '#another-link',
+        icon: "icon-class-name",
+        label: "Last 30 days",
+        to: "#another-link"
+      }
+    ]
+  },
+  {
+    icon: "icon-class-name",
+    label: "Devices by Clinic",
+    content: [
+      {
+        icon: "icon-class-name",
+        label: "IHC",
+        to: "#another-link"
       },
-  ],
-}
+      {
+        icon: "icon-class-name",
+        label: "Johns Hopkins",
+        to: "#another-link"
+      },
+      {
+        icon: "icon-class-name",
+        label: "Mayo Clinic",
+        to: "#another-link"
+      },
+      {
+        icon: "icon-class-name",
+        label: "Massachusetts General",
+        to: "#another-link"
+      },
+      {
+        icon: "icon-class-name",
+        label: "UCFS Medical Center",
+        to: "#another-link"
+      },
+      {
+        icon: "icon-class-name",
+        label: "New York-Presbyterian",
+        to: "#another-link"
+      },
+      {
+        icon: "icon-class-name",
+        label: "Northwestern Memorial",
+        to: "#another-link"
+      },
+      {
+        icon: "icon-class-name",
+        label: "UCLA",
+        to: "#another-link"
+      }
+    ]
+  }
 ];
 
-
 class App extends Component {
-  state = { 
+  state = {
     rawMenuData: null
-  }
+  };
 
-  componentDidMount(){
-    
-  }
+  componentDidMount() {}
 
-  formatMenuData(){
+  formatMenuData() {}
 
-  }
-
-
-  render() { 
-    return ( 
+  render() {
+    return (
       <div className="App">
+        <div></div>
         <SideBarMenu content={menuContent} />
-      <div className="remaining-content">
+        <div className="remaining-content"></div>
       </div>
-      </div>
-     );
+    );
   }
 }
- 
-export default App;
 
+export default App;
