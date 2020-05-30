@@ -1,16 +1,22 @@
-import React from 'react'
+import React, { Component } from "react";
 
-
-function toggleSwitch(){
+class toggleSwitch extends Component {
+  render() {
     return (
-        <div class="toggle-switch">
-            <input type="checkbox" class="toggle-switch-checkbox" name="toggleSwitch" id="toggleSwitch"/>
-            <label class="toggle-switch-label" for="toggleSwitch">
-                Toggle Me!
-            </label>
-
-        </div>
-    )
+      <div class="toggle-switch">
+        <input
+          type="checkbox"
+          className="toggle-switch-checkbox"
+          name={this.props.Name}
+          id={this.props.Name}
+        />
+        <label className="toggle-switch-label" htmlFor={this.props.Name}>
+          <span className="toggle-switch-inner"/>
+          <span className="toggle-switch-switch"/>
+        </label>
+      </div>
+    );
+  }
 }
 
-export default toggleSwitch
+export default toggleSwitch;
