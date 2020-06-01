@@ -1,6 +1,6 @@
 import React from 'react';
-import ToggleSwitch from './toggleSwitch';
-import './App.css';
+import ToggleSwitch from "./ToggleSwitch"
+
 
 function App() {
   return (
