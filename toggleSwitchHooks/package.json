@@ -1,0 +1,8 @@
+{
+  "name": "Mimi",
+  "version": "1.0.0",
+  "description": "\"toggle switch\"",
+  "main": "index.js",
+  "author": "Mimi",
+  "license": "MIT"
+}
